@@ -1,0 +1,21 @@
+GET http://localhost:3000/
+
+
+###
+GET http://localhost:3000/abc
+
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "email":"bhabc123234@gmail.com",
+  "password":"shubo1234"
+}
+# 
+###
+POST http://localhost:3000/auth/login
+###
+POST http://localhost:3000/auth/refresh-token
+###
+DELETE http://localhost:3000/auth/logout
