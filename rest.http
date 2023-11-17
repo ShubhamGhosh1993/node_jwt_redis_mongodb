@@ -1,5 +1,5 @@
 GET http://localhost:3000/
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiI2NTU1ZDg1OGE5NzhjZjUzYWQ2YjE2YjgiLCJpYXQiOjE3MDAyMjQzOTUsImV4cCI6MTcwMDIyNDQwNSwiaXNzIjoiYWJjZC5jb20ifQ.KlNPDCbg2Qy3szWH49rL1dXku2vb9YEraYiBEctkBTc
 
 ###
 GET http://localhost:3000/abc
@@ -15,6 +15,13 @@ Content-Type: application/json
 # 
 ###
 POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email":"shubhamghoshabc@gmail.com",
+  "password":"shuboww1234"
+}
+###"password":"shuboww1234"
 ###
 POST http://localhost:3000/auth/refresh-token
 ###
